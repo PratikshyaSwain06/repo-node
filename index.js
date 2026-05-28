@@ -1,11 +1,15 @@
-console.log("Jenkins CI Pipeline Working!");
+const http = require('http');
 
-let a = 10;
-let b = 20;
+const server = http.createServer((req, res) => {
 
-console.log("Addition =", a + b);
-console.log("Multiplication =", a * b);
-console.log("hello sir");
-console.log("no way");
-console.log("my fav player is MSD");
-console.log("pratikshya is a good girl");
+   res.write("Hello from Jenkins Auto Deployment");
+
+   res.end();
+
+});
+
+server.listen(3000, '0.0.0.0', () => {
+
+   console.log("Server running on port 3000");
+
+});
