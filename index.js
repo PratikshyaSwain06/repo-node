@@ -8,3 +8,4 @@ console.log("Multiplication =", a * b);
 console.log("hello sir");
 console.log("no way");
 console.log("my fav player is MSD");
+console.log("pratikshya is a good girl");
